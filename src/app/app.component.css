@@ -1,5 +1,7 @@
 *{
     font-family: 'Open Sans';
+    text-decoration: none;
+    list-style:none;
 }
 
 .container{
@@ -11,16 +13,18 @@
 .nav{
     width: 250px;
     height: auto;
-    background-color: #402f50;
+    background-color: #401D5E;
 }
 
 .header{
     width: 100%;
     height: 60px;
+    background-color: #4f2e6A;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    border-bottom: 1px solid rgb(34, 34, 34);
 }
 
 .logo{
@@ -36,8 +40,13 @@
 
 .titleContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 10px;
     align-items: center;
+}
+
+ul{
+    border-bottom: 1px solid rgb(34, 34, 34);
 }
 
 .menuTitle{
@@ -49,17 +58,24 @@
     width: 18px;
     height: 18px;
     color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
 .childContainer{
-    width: 100%;
+    width: 118%;
     height: 100%;
-    background-color: white;
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #301850;
 }
 
 .children{
     display: flex;
     flex-direction: column;
     font-size: .5rem;
-    color: black;
+    color: white;
+    display: flex;
 }

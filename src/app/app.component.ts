@@ -14,7 +14,7 @@ export class AppComponent {
     },
     {
       title: 'Gather',
-      children: ['blah', 'blah', 'blah']
+      children: ['Forms', 'Audits', 'Legacy Forms', 'Print Blank Form']
     },
     {
       title: 'See',
@@ -31,7 +31,7 @@ export class AppComponent {
   ];
   togglers = {};
   openChildren(i){
-    console.log(i)
-    // this.togglers[i]=!this.togglers
+    this.togglers[i] =! this.togglers[i];
+    console.log(this.togglers)
   }
 }

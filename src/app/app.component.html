@@ -4,16 +4,17 @@
       <img class="logo" src='./assets/Monero.svg'/>
       <p class="title">{{title}}</p>
     </div>
-    <ul *ngFor='let menuItem of menu' let i=$index;>
+    <ul *ngFor='let menuItem of menu; let i=index'>
       <li class="topLevel">
         <div class="titleContainer">
           <!-- <img src=''/> -->
           <p class="menuTitle">{{menuItem.title}}</p>
-          <img class="img" src='./assets/angle-down.svg' (click)="openChildren(i)"/>
+          <i (click)="openChildren(i)"class="fas fa-caret-right"></i>
+          <!-- <img (click)="openChildren(i)" class="img"  src='./assets/angle-down.svg'/> -->
         </div>
-        <div class="childContainer">
-          <ul class="children" ngShow="togglers[i]" *ngFor='let child of menuItem.children'>
-            <li>{{child}}</li>
+        <div class="childContainer" *ngIf="togglers[i]">
+          <ul class="children" *ngFor='let child of menuItem.children' >
+            <li class="child"><p>{{child}}</p></li>
           </ul>
         </div>
       </li>
