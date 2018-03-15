@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border-bottom: 1px solid rgb(34, 34, 34);
+    border-bottom: 1px solid rgb(47, 20, 70);
 }
 
 .logo{
@@ -45,7 +45,7 @@
 }
 
 ul{
-    border-bottom: 1px solid rgb(34, 34, 34);
+    border-bottom: 1px solid rgb(47, 20, 70);
 }
 
 .menuTitle{
