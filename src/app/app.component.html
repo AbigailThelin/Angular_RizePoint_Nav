@@ -7,9 +7,11 @@
     <ul *ngFor='let menuItem of menu; let i=index'>
       <li class="topLevel">
         <div class="titleContainer">
-          <!-- <img src=''/> -->
+          <img class="icon" src={{menuItem.img}}/>
           <p class="menuTitle">{{menuItem.title}}</p>
-          <i (click)="openChildren(i)"class="fas fa-caret-right"></i>
+          <button class="btn" (click)="openChildren(i)" *ngIf='!togglers[i]'><img class="icon" src='./assets/caret-right.svg'/></button>          
+          <button class="btn" (click)="openChildren(i)" *ngIf='togglers[i]'><img class="icon" src='./assets/caret-down.svg'/></button>
+          <!-- <button class="btn" (click)="openChildren(i)"></button> -->
           <!-- <img (click)="openChildren(i)" class="img"  src='./assets/angle-down.svg'/> -->
         </div>
         <div class="childContainer" *ngIf="togglers[i]">
@@ -21,3 +23,6 @@
     </ul>
   </div>
 </div>
+
+
+<!-- <i style='fill:white; height: 20px; width: 20px;' class="fas fa-caret-{{togglers[i] ? 'down' : 'right'}}"></i> -->

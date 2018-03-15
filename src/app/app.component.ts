@@ -10,23 +10,28 @@ export class AppComponent {
   menu = [
     {
     title: 'Define',
-    children: ['blah', 'blah', 'blah']
+    children: ['tbd', 'tbd', 'tbd'],
+    img: '../assets/2C.svg'
     },
     {
       title: 'Gather',
-      children: ['Forms', 'Audits', 'Legacy Forms', 'Print Blank Form']
+      children: ['Forms', 'Audits', 'Legacy Forms', 'Print Blank Form'],
+      img: '../assets/clipboard-list.svg'
     },
     {
       title: 'See',
-      children: ['blah', 'blah', 'blah', 'blah']
+      children: ['tbd', 'tbd'],
+      img: '../assets/calendar.svg'
     },    
     {
       title: 'Act',
-      children: ['blah', 'blah', 'blah']
+      children: ['tbd', 'tbd', 'tbd'],
+      img: '../assets/user.svg'
     },
     {
       title: 'Admin',
-      children: ['blah', 'blah', 'blah']
+      children: ['tbd', 'tbd', 'tbd'],
+      img: '../assets/cog.svg'
     }
   ];
   togglers = {};

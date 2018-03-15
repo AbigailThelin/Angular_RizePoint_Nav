@@ -40,8 +40,7 @@
 
 .titleContainer{
     display: flex;
-    justify-content: space-between;
-    margin-right: 10px;
+    position: relative;
     align-items: center;
 }
 
@@ -75,7 +74,20 @@ ul{
 .children{
     display: flex;
     flex-direction: column;
-    font-size: .5rem;
+    font-size: .7rem;
     color: white;
     display: flex;
+}
+
+.btn{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
 }
